@@ -46,7 +46,6 @@ abstract class PrettyEnum
     }
 
     private static function getItem($key) {
-        $key = $key[0];
         $constants = static::constants();
 
         if (!isset($constants[$key])) {
