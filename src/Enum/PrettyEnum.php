@@ -6,8 +6,7 @@ abstract class PrettyEnum
 {
     protected static $instances = [];
 
-    private static function childInstance()
-    {
+    private static function childInstance() {
         $class = get_called_class();
 
         if(!isset(static::$instances[$class])) {

@@ -2,13 +2,11 @@
 
 namespace JefersonC\Tests;
 
-use JefersonC\ {
-    Enum\PrettyEnum,
-    Enum\InvalidEnumKeyException,
-    Enum\InvalidEnumMethodException,
-    Example\ExampleEnum,
-    Example\ProfilesExampleEnum,
-};
+use JefersonC\Enum\PrettyEnum;
+use JefersonC\Enum\InvalidEnumKeyException;
+use JefersonC\Enum\InvalidEnumMethodException;
+use JefersonC\Example\ExampleEnum;
+use JefersonC\Example\ProfilesExampleEnum;
 
 use PHPUnit\Framework\TestCase;
 

@@ -2,10 +2,8 @@
 
 namespace JefersonC\Example;
 
-use JefersonC\Enum\ {
-    PrettyEnum,
-    PrettyEnumContract
-};
+use JefersonC\Enum\PrettyEnum;
+use JefersonC\Enum\PrettyEnumContract;
 
 final class ProfilesExampleEnum extends PrettyEnum implements PrettyEnumContract
 {
