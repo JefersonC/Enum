@@ -4,8 +4,8 @@ build:
             -
                 command: phpunit --coverage-clover=my-coverage-file
                 coverage:
-                    file: my-coverage-file
-                    format: php-clover
+                    file: build/logs/clover.xml
+                    format: clover
 
 checks:
     php:
@@ -24,4 +24,3 @@ tools:
     php_changetracking: true
     php_pdepend: true
     php_analyzer: true
-
