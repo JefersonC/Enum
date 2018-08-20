@@ -1,0 +1,24 @@
+{
+    "name": "jefersonc/enum",
+    "description": "Demo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Stilliard",
+            "email": "andrew.stilliard@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "JefersonC\\": "src",
+            "JefersonC\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.3.1"
+    }
+}
