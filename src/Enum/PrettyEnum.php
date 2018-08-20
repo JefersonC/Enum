@@ -56,11 +56,11 @@ abstract class PrettyEnum
         return $constants[$key];
     }
 
-    private function item($key) {
+    private static function item($key) {
         return static::mountItem(static::getItem($key));
     }
 
-    private function mountItem($item) {
+    private static function mountItem($item) {
         $obj = new \stdClass();
 
         foreach($item as $key => $value) {
