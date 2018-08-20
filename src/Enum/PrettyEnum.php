@@ -21,19 +21,19 @@ abstract class PrettyEnum
         return $class->register();
     }
 
-    private static function get($index) {
+    public static function get($index) {
       $item = static::getItem($index);
 
       return $item['value'];
     }
 
-    private function pretty($index) {
+    public static function pretty($index) {
         $item = static::getItem($index);
 
         return $item['name'];
     }
 
-    private static function all() {
+    public static function all() {
         $constants = static::constants();
 
         $out = [];
@@ -56,7 +56,7 @@ abstract class PrettyEnum
         return $constants[$key];
     }
 
-    private static function item($key) {
+    public static function item($key) {
         return static::mountItem(static::getItem($key));
     }
 
