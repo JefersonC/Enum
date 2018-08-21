@@ -6,7 +6,7 @@ abstract class PrettyEnum
 {
     protected static $instances = [];
 
-    private static function childInstance() {
+    protected static function childInstance() {
         $class = get_called_class();
 
         if(!isset(static::$instances[$class])) {
@@ -16,7 +16,7 @@ abstract class PrettyEnum
         return static::$instances[$class];
     }
 
-    private static function constants() {
+    protected static function constants() {
         $class = static::childInstance();
         return $class->register();
     }
@@ -45,7 +45,7 @@ abstract class PrettyEnum
         return $out;
     }
 
-    private static function getItem($key) {
+    protected static function getItem($key) {
         $constants = static::constants();
 
         if (!isset($constants[$key])) {
@@ -59,7 +59,7 @@ abstract class PrettyEnum
         return static::mountItem(static::getItem($key));
     }
 
-    private static function mountItem($item) {
+    protected static function mountItem($item) {
         $obj = new \stdClass();
 
         foreach($item as $key => $value) {
